@@ -1,0 +1,32 @@
+Создание Виртуальной Среды:
+python -m venv myvenv - на  Windows
+python3 -m venv myvenv - на MacOS
+
+активация виртуально среды
+source myvenv/bin/activate - на MacOS
+myvenv\Scripts\activate - на  Windows
+
+установка библиотек и модуле
+pip install django psycopg2 - на  Windows
+pip install django psycopg2-binary - на MacOS
+
+Сохранение списка библиотек для проекта:
+pip freeze > requirements.txt
+
+Установка библиотек из файла:
+pip install -r requirements.txt
+
+Миграция в БД
+python manage.py migrate
+
+Запуск проекта:
+python manage.py runserver
+
+Создание супер пользователя
+python manage.py createsuperuser
+
+Создание приложения
+python manage.py startapp post
+
+Создание миграций
+python manage.py makemigrations
